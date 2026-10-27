@@ -1,0 +1,260 @@
+/* Estilo geral e especial do controlepa.php */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+}
+img {
+      max-width: 30%;
+      height: auto;
+}
+h1 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-size: 10px;
+    color: red;
+}
+h3 {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+#titulo {
+    text-align: center;
+    color:#007BFF;
+}
+/* Estilização do formulário */
+#form1 {
+    background: #ffffff;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Campos do formulário */
+.campo {
+    margin-bottom: 10px;
+}
+.titulos {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    background-color: black;
+    padding: 8px;
+}
+.icone {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 40px; /* ou o tamanho desejado */
+    height: 40px;
+}
+.icone:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.subtitulos {
+    text-align: center;
+    color:white;
+    margin-bottom: 10px;
+    background-color: #a9a9a9;
+    padding: 1px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"], select{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+select{
+	width: 50px;
+}
+
+#salvar {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+#salvar:hover {
+    background-color: #0056b3;
+}
+
+.tabela-saude {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.tabela-saude thead {
+  background-color: #0078D7;
+  color: white;
+}
+
+.tabela-saude th, .tabela-saude td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-saude tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.btn-excluir {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-excluir:hover {
+  background-color: #c9302c;
+}
+
+.btn-incluir {
+  background-color: #A8E6CF;
+  color: #2E7D32;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-incluir:hover {
+  background-color: #81C784;
+}
+
+.btn-incluir2 {
+    background-color: #A8E6CF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.btn-incluir2:hover {
+    background-color: #81C784;
+}
+
+.btn-avaliar {
+  background-color: #BBDEFB; /* azul claro */
+  color: #0D47A1; /* azul escuro para o texto */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-avaliar:hover {
+  background-color: #64B5F6; /* azul médio no hover */
+}
+
+.container-botao {
+  position: relative; /* Necessário para posicionar a legenda dentro */
+  display: inline-block; /* Ou outro display que faça sentido para o seu botão */
+}
+
+.container-botao button {
+  position: relative; /* Define o contexto para a legenda absoluta */
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.legenda {
+  display: none; /* Esconde a legenda inicialmente */
+  position: absolute; /* Permite posicionar a legenda */
+  bottom: 100%; /* Posiciona a legenda acima do botão */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza a legenda horizontalmente */
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap; /* Garante que o texto não quebre em linhas diferentes */
+  z-index: 1; /* Garante que a legenda apareça sobre o botão */
+}
+
+.container-botao button:hover .legenda {
+  display: block; /* Mostra a legenda quando o mouse está sobre o botão */
+}
+
+.label2 {
+  font-weight: bold;
+  margin-right: 8px;
+  color: #0078D7;
+}
+
+.bp-legend {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.square.normal { background: #2ecc71; }   /* Verde - Normal */
+.square.pre-has { background: #0000FF; }  
+.square.has-e1 { background: #f1c40f; }   /* Amarelo - HAS E1 */
+.square.has-e2 { background: #e67e22; }   /* Laranja - HAS E2 */
+.square.has-e3 { background: #e74c3c; }   /* Vermelho - HAS E3 */
+.square.hsi   { background: #8B4513; }    /* Marrom - Hipertensão Sistólica Isolada */
+
+
+/* Configurações especiais do antropometrico.php */
+#resultIMC, #resultcirabd, #resultcintquad {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	gap: 8px;
+      font-family: Arial, sans-serif;
+      color:#007BFF;
+	font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #form1 {
+        max-width: 100%;
+    }
+}

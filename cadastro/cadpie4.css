@@ -1,0 +1,99 @@
+h1, h2 {
+    font-size: 24px; /* 16px é pequeno para títulos */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #333;
+}
+#titulocaduser {
+    text-align: center;
+    background-color: #007BFF;
+    padding: 15px;
+    color: white; /* Adicionado para garantir contraste */
+    border-radius: 5px;
+}
+#formcad {
+    background: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.campo input[type="checkbox"] {
+    margin-right: 10px;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%; /* Melhor para responsividade */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0078D4;
+    cursor: pointer;
+}
+
+.checkbox-text {
+    color: #333;
+    user-select: none;
+}
+#verificasenha {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#salvar {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#salvar:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 600px) {
+    #formcad {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="password"],
+    input[type="email"],
+    select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato</title>
+  <meta name="description" content="Fale por e-mail ou WhatsApp." />
+  <style>
+    :root {
+      --azul-claro: #e7f3ff;
+      --azul: #3a7bd5;
+      --azul-escuro: #1f4e8c;
+      --texto: #0f2138;
+      --borda: #c8def8;
+      --fundo-card: #ffffff;
+      --foco: #ffb703;
+    }
+
+    p { margin: 0.5rem 0 0; }
+
+    .sobre {
+      margin-bottom: 20px;
+      color: #355076;
+    }
+
+    .canais {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    .canal {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px;
+      border: 1px dashed var(--borda);
+      border-radius: 12px;
+      background: #fbfdff;
+    }
+
+    .icone {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--azul-claro);
+      color: var(--azul-escuro);
+      font-weight: 700;
+      font-size: 18px;
+      flex: 0 0 40px;
+    }
+
+    .texto {
+      flex: 1;
+    }
+
+    .texto strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 2px;
+      color: var(--azul-escuro);
+    }
+
+    .acoes a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fff;
+      background: var(--azul);
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform 0.06s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .acoes a:hover {
+      background: var(--azul-escuro);
+      box-shadow: 0 8px 20px rgba(31, 78, 140, 0.22);
+      transform: translateY(-1px);
+    }
+
+    .acoes a:focus-visible {
+      outline: 3px solid var(--foco);
+      outline-offset: 2px;
+    }
+
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: 1.2fr 1fr; }
+    }
+
+    @media (min-width: 820px) {
+      .canais { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+        <section class="card" aria-labelledby="titulo-contato">
+          <p class="sobre">Escolha o canal preferido para falar. Respondemos o quanto antes.</p>
+
+          <div class="canais" role="list">
+            <!-- E-mail -->
+            <article class="canal" role="listitem" aria-labelledby="label-email">
+              <div class="icone" aria-hidden="true">
+                <img src="icones/email.png" alt="Ícone de e-mail" width="24" height="24" />
+              </div>
+              <div class="texto">
+                <strong id="label-email">E-mail</strong>
+                <p>contato@jarltech.com.br</p>
+              </div>
+              <div class="acoes">
+                <a href="mailto:contato@jarltech.com.br?subject=Contato%20-%20JARL%20TECH"
+                   aria-label="Enviar e-mail para JARL TECH">
+                  Enviar
+                </a>
+              </div>
+            </article>
+            
+            <!-- WhatsApp -->
+            <article class="canal" role="listitem" aria-labelledby="label-whatsapp">
+              <div class="icone" aria-hidden="true">
+                <img src="icones/whatsapp.png" alt="Ícone do WhatsApp" width="24" height="24" />
+              </div>
+              <div class="texto">
+                <strong id="label-whatsapp">WhatsApp</strong>
+                <p>(17) 99173-7971</p>
+              </div>
+              <div class="acoes">
+                <a href="https://wa.me/5517991737971?text=Olá%20JARL%20TECH%2C%20gostaria%20de%20falar%20com%20a%20equipe."
+                   target="_blank" rel="noopener"
+                   aria-label="Abrir conversa no WhatsApp">
+                  Conversar
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+
+
+</body>
+</html>
